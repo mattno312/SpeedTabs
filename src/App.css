@@ -42,10 +42,15 @@ html {
     transform: scale(0.3);
   }
 
-  10.5% {
-    filter: opacity(66.6%) saturate(10%);
+  13% {
+    filter: opacity(31%);
   }
-
+  14% {
+    filter: opacity(100%);
+  }
+  15% {
+    filter: opacity(31%);
+  }
   36% {
     filter: opacity(100%);
   }
