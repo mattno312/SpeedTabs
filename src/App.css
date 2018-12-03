@@ -1,0 +1,124 @@
+html {
+  background-image: url("./media/pores.jpg");
+}
+
+.TabArea-Tabs {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.App {
+}
+
+.App-header {
+  margin-top: 12px;
+  margin-left: 36px;
+  text-align: center;
+  background-color: #ff000f;
+  border-left: ridge 6px #a70000;
+  border-right: ridge 6px #a70000;
+  border-bottom: ridge 6px #a70000;
+  width: 200px;
+  border-radius: 23%;
+  font-family: georgia;
+  color: #ffffff;
+  text-shadow: -1px 0px 5px #000000;
+  font-size: 1.25rem;
+}
+
+.zoom {
+  animation-name: bugs;
+  animation-duration: 13.31s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-delay: 0;
+  animation-play-state: running;
+}
+
+@keyframes bugs {
+  0% {
+    transform: scale(0.3);
+  }
+
+  10.5% {
+    filter: opacity(66.6%) saturate(10%);
+  }
+
+  36% {
+    filter: opacity(100%);
+  }
+  42% {
+    filter: opacity(66.6%);
+    transform: scale(0.9) rotateX(6px) rotateZ(-6px);
+  }
+  50% {
+    filter: opacity(100%);
+  }
+  55% {
+    filter: opacity(75%);
+  }
+  100% {
+    filter: opacity(100%);
+    transform: scale(1) rotateX(-10deg);
+  }
+}
+
+.anim {
+  filter: opacity(20%);
+  animation-name: wig;
+  animation-duration: 4.66ms;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  animation-delay: 0;
+  animation-play-state: running;
+}
+
+@keyframes wig {
+  0% {
+    transform: scale(1) rotateX(0deg) rotateZ(0deg);
+  }
+
+  25% {
+    transform: scale(0.8) rotateX(-10deg) rotateZ(15deg);
+  }
+
+  33% {
+    transform: scale(0.2) rotateX(-10deg) rotateZ(-10deg);
+  }
+
+  66% {
+    transform: scale(0.7) rotateX(30deg) rotateZ(0deg);
+  }
+
+  100% {
+    transform: scale(1) rotateX(0deg) rotateZ(0deg) rotateY(10deg);
+  }
+}
+
+.hover {
+  animation-name: flu;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  animation-delay: 0;
+  animation-play-state: running;
+}
+
+@keyframes flu {
+  0% {
+    transform: scale(0.2) rotateY(1deg);
+  }
+  50% {
+    filter: opacity(66.6%) saturate(10%);
+    transform: scale(0.2) rotateX(6deg) rotateZ(-10deg);
+  }
+  100% {
+    transform: scale(0.2) rotateX(-3deg) rotateY(-1deg) rotateZ(14deg);
+  }
+}

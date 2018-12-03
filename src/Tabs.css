@@ -1,0 +1,18 @@
+.TabArea-Tabs-Tab {
+  padding: 5px;
+  border: 1px inset white;
+  color: white;
+  filter: drop-shadow(2px 2px 0px #a70000);
+  text-shadow: 2px 3px 10px #000000;
+  border-radius: 4px;
+  background-color: red;
+  margin: 10px;
+}
+
+.TabArea-Tabs-Tab.selected {
+  background-color: #a70000;
+  filter: drop-shadow(2px 2px 0px #a9h000);
+}
+
+.TabArea-Content {
+}
